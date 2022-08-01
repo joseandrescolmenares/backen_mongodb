@@ -21,7 +21,7 @@ app.get("/", (req, res) => {
 })
 
 
-mongoose.connect(process.env.MONGODB_URI).then(() => console.log('conectado a mongodb atlas'))
+mongoose.connect(process.env.MONGODB).then(() => console.log('conectado a mongodb atlas'))
 .catch(err => console.log(err))
 
 
